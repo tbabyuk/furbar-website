@@ -1,0 +1,82 @@
+@import "tailwindcss";
+
+:root {
+  --background: #f6efe6;
+  --foreground: #1c1614;
+  --cream: #f6efe6;
+  --paper: #fffaf4;
+  --ink: #1c1614;
+  --heading: #3f3b38;
+  --muted: #6d625b;
+  --line: #e4d8cc;
+  --peach: #fdd6ba;
+  --coral: #f0523d;
+  --coral-dark: #d43d29;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-cream: var(--cream);
+  --color-paper: var(--paper);
+  --color-ink: var(--ink);
+  --color-heading: var(--heading);
+  --color-muted: var(--muted);
+  --color-line: var(--line);
+  --color-peach: var(--peach);
+  --color-coral: var(--coral);
+  --color-coral-dark: var(--coral-dark);
+  --font-sans: var(--font-outfit);
+  --font-heading: var(--font-barlow);
+  --font-label: var(--font-barlow);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-outfit), system-ui, sans-serif;
+}
+
+.font-heading {
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: var(--heading);
+}
+
+.font-heading.text-paper {
+  color: var(--paper);
+}
+
+.page-wrap {
+  margin-inline: auto;
+  width: 100%;
+  max-width: 76rem;
+  padding-inline: 1.5rem;
+}
+
+@media (min-width: 640px) {
+  .page-wrap {
+    padding-inline: 2.25rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .page-wrap {
+    padding-inline: 3.25rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  .page-wrap {
+    padding-inline: 4rem;
+  }
+}
+
+::selection {
+  background: #f0523d;
+  color: #fffaf4;
+}
