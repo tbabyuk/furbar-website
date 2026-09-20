@@ -12,8 +12,9 @@ export function Hero() {
           <p className="font-label text-xs font-semibold uppercase tracking-[0.22em] text-coral">
             Toronto · North York · Newmarket
           </p>
-          <h1 className="mt-4 max-w-xl font-heading text-[2.7rem] leading-[1.08] sm:text-5xl lg:text-[3.55rem]">
-            Stress-free grooming, from nose to tail.
+          <h1 className="mt-4 max-w-xl font-heading text-[2.4rem] leading-[1.08] sm:text-5xl lg:text-[3.55rem]">
+            <span className="whitespace-nowrap">Stress-free grooming,</span>{" "}
+            from nose to tail.
           </h1>
           <p className="mt-5 max-w-xl text-lg leading-relaxed text-muted">
             Fur Bar pampers dogs and cats in a clean, calm salon. Certified
