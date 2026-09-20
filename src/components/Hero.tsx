@@ -7,8 +7,8 @@ import { BookButton } from "./BookButton";
 export function Hero() {
   return (
     <section className="relative overflow-hidden">
-      <div className="page-wrap grid items-center gap-10 py-12 sm:py-16 lg:grid-cols-12 lg:items-stretch lg:gap-16 lg:py-20">
-        <div className="lg:col-span-6 lg:flex lg:flex-col lg:justify-center">
+      <div className="page-wrap grid items-center gap-8 py-8 sm:gap-10 sm:py-16 lg:grid-cols-12 lg:items-stretch lg:gap-16 lg:py-20">
+        <div className="order-2 lg:order-1 lg:col-span-6 lg:flex lg:flex-col lg:justify-center">
           <p className="font-label text-xs font-semibold uppercase tracking-[0.22em] text-coral">
             Toronto · North York · Newmarket
           </p>
@@ -56,8 +56,8 @@ export function Hero() {
           </div>
         </div>
 
-        <div className="relative min-h-[280px] lg:col-span-6">
-          <div className="relative aspect-[4/5] overflow-hidden rounded-[2rem] bg-ink/5 lg:absolute lg:inset-0 lg:aspect-auto">
+        <div className="relative order-1 min-h-[220px] lg:order-2 lg:col-span-6 lg:min-h-[280px]">
+          <div className="relative aspect-4/3 overflow-hidden rounded-[2rem] bg-ink/5 sm:aspect-4/5 lg:absolute lg:inset-0 lg:aspect-auto">
             <Image
               src="/images/gallery/bernese.jpg"
               alt="A freshly groomed fluffy dog sitting proudly at Fur Bar"
